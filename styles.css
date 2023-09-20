@@ -1,10 +1,110 @@
-table,
-td {
-    border: 1px solid #333;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("./Imagenes/background.jpg");
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    
 }
 
-thead,
-tfoot {
-    background-color: #333;
-    color: #fff;
+.cv-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
 }
+
+ .left-panel {
+     flex: 1;
+     background-color: #3498db;
+     color: #fff;
+     padding: 20px;
+ }
+
+ .left-panel img {
+     max-width: 150px;
+     border-radius: 50%;
+     margin-bottom: 20px;
+ }
+
+ .left-panel h1 {
+     font-size: 36px;
+     margin: 0;
+ }
+
+ .left-panel p {
+     font-size: 20px;
+     opacity: 0.8;
+     margin-bottom: 20px;
+     font-weight: bold;
+ }
+
+ .left-panel ul {
+     list-style: none;
+     padding: 0;
+ }
+
+ .left-panel li {
+     font-size: 16px;
+     margin-bottom: 10px;
+ }
+
+ .right-panel {
+     flex: 2;
+     padding: 20px;
+ }
+
+ .section {
+     margin-bottom: 30px;
+     background-color: rgba(255, 255, 255, 0.9);
+     /* Fondo semi-transparente */
+     border-radius: 5px;
+     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+ }
+
+ .section h2 {
+     font-size: 24px;
+     color: #333;
+     margin: 0;
+ }
+
+ .section p {
+     font-size: 16px;
+     color: #666;
+     line-height: 1.6;
+ }
+
+ ul {
+     list-style: none;
+     padding: 0;
+ }
+
+ li {
+     margin-bottom: 5px;
+ }
+
+ .section.skills ul li:before,
+ .section.languages ul li:before {
+     content: '\2022';
+     color: #666;
+     margin-right: 5px;
+ }
+
+ .section.skills ul,
+ .section.languages ul {
+     flex-basis: 48%;
+ }
+
+ .section.skills {
+     background-color: rgba(236, 240, 241, 0.9);
+     /* Fondo semi-transparente */
+ }
+
+ .section.languages {
+     background-color: rgba(213, 219, 219, 0.9);
+     /* Fondo semi-transparente */
+ }
